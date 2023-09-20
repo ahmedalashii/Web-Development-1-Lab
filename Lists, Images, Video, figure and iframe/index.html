@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Your username"/>
+        <meta name="description" content="This webpage is for learning how lists work"/>
+        <meta name="keywords" content="unordered lists, ordered lists, definition lists, nested lists"/>
+        <meta charset="UTF-8" />
+        <title>Lists</title>
+        <!-- MIME type -->
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- 1- Ordered List -->
+        <p><b>The most favourite games are:</b></p>
+        <ol type="1">
+            <li>Battlefield</li>
+            <li>Call of duty</li>
+            <li>Star wars</li>
+            <li>The last of us</li>
+            <li>Tarazan</li>
+        </ol>
+        <!-- 2- Unordered List -->
+        <p><b>The most favourite games:</b></p>
+        <ul>
+            <li>Battlefield</li>
+            <li>Call of duty</li>
+            <li>Star wars</li>
+            <li>The last of us</li>
+            <li>Tarazan</li>
+        </ul>
+        <!-- 3- Definition List -->
+        <p><b>We have the most common terms in the web:</b></p>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HTML stands for HyperText Markup Language and it's the language used for building websites.</dd>
+          <dt>CSS</dt>
+          <dd>CSS stands for Cascading Style Sheet and it's the language used for styling web pages.</dd>
+          <dt>JavaScript</dt>
+          <dd>JS stands for JavaScript and it's the language that gives our website the interactivity that we need.</dd>
+          <dt>HTTP</dt>
+          <dd>HTTP stands for HyperText Transfer Protocol which is the protocol used for transferring data over the web network.</dd>
+        </dl>
+        <!-- 4- Nested List -->
+        <p><b>This is a nested unordered/ordered list:</b></p>
+        <ul>
+            <li>Item one</li>
+            <li>Item two:
+                <ul>
+                    <li>Item two-one</li>
+                    <li>Item two-two</li>
+                    <li>Item two-three</li>
+                    <li>Item two-four:
+                        <ol type="i">
+                            <li>Item two-four-one</li>
+                            <li>Item two-four-two</li>
+                            <li>Item two-four-three</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Item three</li>
+            <li>Item four</li>
+        </ul>
+        <!-- Image >> src (URL/Path of the target image), alt (Alternative text if the image is invalid) -->
+        <!-- 1- External Image >> URL -->
+        <p>
+            <img title="This picture represents a tree." src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000" alt="This text will appear if the image is unavailable" width="350px" height="250px">
+        </p>
+        <!-- 2- Internal Image (Asset) >> Path -->
+        <img title="This picture is about the nature in the world." src="assets/images/nature.jpeg" alt="This text will appear if the image is unavailable" width="350px" height="250px">
+        <br />
+        <hr />
+        <h2>Where to place Images?</h2>
+        <h3>1- Before a paragarph</h3>
+        <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80" alt="This is a picture that represents ....." title="This is a picture that represents ....." width="250px" height="150px">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <hr />
+        <h3>2- In the begining of a paragraph</h3>
+        <p>
+            <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80" alt="This is a picture that represents ....." title="This is a picture that represents ....." width="250px" height="150px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <hr />
+        <h3>3- In the middle of a paragraph</h3>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+            <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80" alt="This is a picture that represents ....." title="This is a picture that represents ....." width="250px" height="150px">
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <hr />
+        <h3>4- At the end of a paragraph</h3>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80" alt="This is a picture that represents ....." title="This is a picture that represents ....." width="250px" height="150px">
+        </p>
+        <hr />
+        <!-- Figure && Figure Caption -->
+        <h1>The figure && figure caption elements >> with an image</h1>
+        <figure>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/binary_tree-1.png" alt="This is a binary tree" title="This is a binary tree">
+            <figcaption>Figure 1. Binary Tree is a data structure that is used to speed the search process.</figcaption>
+        </figure>
+        <!-- Figure && Figure Caption -->
+        <h1>The figure && figure caption elements >> with an asset video</h1>
+        <figure>
+            <video controls width="450px" height="320px">
+                <source src="assets/videos/sample_video.mp4">
+            </video>
+            <figcaption>Figure 2. This is an asset video for the wildlife using the &lt;video&gt; element.</figcaption>
+        </figure>
+        <!-- Figure && Figure Caption -->
+        <h1>The figure && figure caption elements >> with a youtube video</h1>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=YYWtB24BOTqrTs6e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Figure 3. This is a youtube video for the wildlife using the &lt;iframe&gt; element.</figcaption>
+        </figure>
+        <!-- Figure && Figure Caption -->
+        <h1>The figure && figure caption elements >> with a hosted webview/webpage</h1>
+        <figure>
+            <iframe width="560" height="315" src="../Introduction to HTML + Texts/test.html"></iframe>
+            <figcaption>Figure 4. This is the content of test page</figcaption>
+        </figure>
+    </body>
+</html>

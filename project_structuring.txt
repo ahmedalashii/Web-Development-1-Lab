@@ -1,0 +1,24 @@
+photopea/
+|-- index.html >> The server looks for this file
+|-- about.html
+|-- contact.html
+|-- assets/
+|   |-- css/
+|   |   |-- styles.css
+|   |   |-- header.css
+|   |-- images/
+|   |   |-- logo.png
+|   |   |-- banner.jpeg
+|   |-- js/
+|   |   |-- script.js
+|   |   |-- header.js
+|   |-- documents/
+|   |   |-- terms_and_conditions.pdf
+|-- blog/
+|   |-- post1.html
+|   |-- post2.html
+|-- 404.html
+.
+.
+.
+.
