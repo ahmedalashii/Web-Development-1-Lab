@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block-level elements vs inline-level elements</title>
+        <meta name="author" content="Ahmed Alashi"/>
+        <meta name="description" content="We are going to explore what block-level and inline-level elements are."/>
+        <meta name="keywords" content="block-level elements, block, inline, div, span, html"/>
+        <style>
+            /* span{
+                background-color: lightblue;
+            } */
+            /* div{
+                background-color: lightgreen;
+            } */
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <!-- 
+            1. Block-level element >> Element that starts with a new line and ends at the edge of its parent.
+            1. Block-level element >> Element that starts with a new line and take the full width available of its parent.
+            2. Inline-level element >> Element that takes as much as necessary for its width ..
+            Examples for block-level: div, p
+            Examples for inline-level: b, strong, span
+
+            div, span are containers:
+            span is an inline-level container
+            div is a block-level container
+         -->
+        <!-- <p>This is an <span>inline</span> element.</p> -->
+        <div style="border: 3px solid green;">
+            This is a div element that represents a block-level element in a parent, this block-level element will take the full width available of its parent.
+            Whether this parent is a div tag or a body.
+        </div>
+        <div style="width: 200px; border: 3px solid black;">
+            This is some <span style="background-color: aqua">content</span>.
+            <div style="color: red;">
+                This is a div element that represents a block-level element in a parent, this block-level element will take the full width available of its parent.
+                Whether this parent is a div tag (limited width) or a body.
+            </div>
+            This is some other <span style="background-color: aqua">content</span>.
+        </div>
+    </body>
+</html>
