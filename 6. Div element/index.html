@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML div element and its usage</title>
+        <meta name="author" content="Ahmed Alashi" />
+        <meta name="description" content="This is the description of our div element!" />
+        <style>
+            .item{
+                background-color: lightblue;
+                text-align: center;
+            }
+
+            .kids, .sports, .men, .women{
+                background-color: red;
+                padding: 20px;
+            }
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <!-- 
+            1. Div element is an element that contains other elements (container).
+            2. Div element is a block-level element.
+            3. Div element can be styled, therefore elements inside this container can also take this style.
+
+            E-commerce categories could be:
+            a. Kids
+            b. Men
+            c. Women
+            d. Sports
+
+            Item (product):
+            i. Item name
+            ii. Item description
+            iii. Item price
+        -->
+        <h1>This is demo Aliexpress!</h1>
+        <!-- Kids Category -->
+        <div class="kids">
+            <!-- Kids Item 1 -->
+            <div class="item">
+                <h2>Kids Shoes</h2>
+                <p>These kids shoes are appropriate for kids between 3-5 years.</p>
+                <p>
+                    Original Price: <del>$200</del> <br/>
+                    Discount Price: $99
+                </p>
+            </div>
+            
+            <!-- Kids Item 2 -->
+            <div class="item">
+                <h2>Kids Lunch boxes</h2>
+                <p>These lunch boxes are appropriate for kids between 4-6 years.</p>
+                <p>
+                    Original Price: <del>$200</del> <br/>
+                    Discount Price: $99
+                </p>
+            </div>
+        </div>
+        <hr />
+        <!-- Men Category -->
+        <div class="men">
+            <!-- Men Item 1 -->
+            <div class="item">
+                <h2>Men T-shirt</h2>
+                <p>This T-shirt is a casual t-shirt that ....</p>
+                <p>
+                    Original Price: <del>$120</del> <br/>
+                    Discount Price: $69
+                </p>
+            </div>
+            
+            <!-- Men Item 2 -->
+            <div class="item">
+                <h2>Men Pants</h2>
+                <p>These pants is ....</p>
+                <p>
+                    Original Price: <del>$150</del> <br/>
+                    Discount Price: $69
+                </p>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Women Category -->
+        <div class="women">
+            <!-- Women Item 1 -->
+            <div class="item">
+                <h2>Women dress</h2>
+                <p>This dress is for women who love festivals</p>
+                <p>
+                    Original Price: <del>$150</del> <br/>
+                    Discount Price: $79
+                </p>
+            </div>
+            
+            <!-- Women Item 2 -->
+            <div class="item">
+                <h2>Women sandals</h2>
+                <p>These sandals are for women who love festivals ..</p>
+                <p>
+                    Original Price: <del>$180</del> <br/>
+                    Discount Price: $99
+                </p>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Sports Category -->
+        <div class="sports">
+            <!-- Sports Item 1 -->
+            <div class="item">
+                <h2>Adidas Shoes</h2>
+                <p>These adidas shoes is for people who are obsessed with football!</p>
+                <p>
+                    Original Price: <del>$160</del> <br/>
+                    Discount Price: $89
+                </p>
+            </div>
+            
+            <!-- Sports Item 2 -->
+            <div class="item">
+                <h2>Tennis table</h2>
+                <p>This tennis table is for people who love tennis!</p>
+                <p>
+                    Original Price: <del>$190</del> <br/>
+                    Discount Price: $99
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
