@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample HTML Page Layout</title>
+    <meta name="author" content="Ahmed Alashi" />
+    <style>
+      /* Styles >> CSS Code */
+      /* Reset some default browser styles */
+      body,
+      h1,
+      h2,
+      p,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      /* Apply a background to the entire page */
+      body {
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Styling the header */
+      header {
+        background-color: #333;
+        text-align: center;
+        color: #fff;
+        padding: 15px;
+      }
+      /* Styling the navigation menu */
+      nav {
+        background-color: #444;
+        text-align: center;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+      nav ul li a:hover{
+        color: lightblue;
+        font-size: large;
+      }
+      /* Styling the main content area */
+      main{
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header of our website -->
+    <header>
+      <h1>My Website</h1>
+    </header>
+
+    <!-- Our navigation links -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#content">Main content</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content of our website -->
+    <main>
+      <section class="content" id="content">
+        <h2>Welcome to my website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          nemo natus hic modi est tenetur adipisci sint, libero, dolore quis
+          quam quos ab exercitationem! Sint autem voluptate nesciunt iste
+          facere?
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer >> the last section in our webpage -->
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+  </body>
+</html>
