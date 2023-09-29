@@ -1,24 +1,7 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Tables</title>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Ahmed Alashi" />
-        <meta name="description" content="In this webpage, we are going to describe what the tables are!" />
-        <meta name="keywords" content="tables, html tables, thead, tbody, tfoot" />
+        <title>HTML Tables</title>
     </head>
-    <style>
-        /* table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th,td{
-            border: 1px solid black;
-        }
-        thead th{
-            background-color: #888;
-        } */
-    </style>
     <body>
         <!-- Tables are used to display arranged data in the form of rows and columns -->
         <!-- 
@@ -27,55 +10,252 @@
             3. <thead>, <tbody> and <tfoot> contain <tr> (Table row).
             4. <tr> contain <td> (Table data cell) or <th> (Table header cell).
         -->
-        <h2>These are the sold items from 18-21 September of 2023 represented by table</h2>
         <table border="1">
-            <caption>Daily Sales Schedule</caption>
+            <caption>Basic Table</caption>
+            <tr>
+                <th>Header Cell 1</th>
+                <th>Header Cell 2</th>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+            </tr>
+            <tr>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption>Table with Links</caption>
+            <tr>
+                <th>Website</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.example.com">Example Website</a></td>
+                <td>Sample description of the website</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.example2.com">Another Example</a></td>
+                <td>Another sample description</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption>Table with Lists</caption>
+            <tr>
+                <th>Category</th>
+                <th>Items</th>
+            </tr>
+            <tr>
+                <td>Fruits</td>
+                <td>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Orange</li>
+                        <li>Banana</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Vegetables</td>
+                <td>
+                    <ul>
+                        <li>Carrot</li>
+                        <li>Broccoli</li>
+                        <li>Spinach</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <hr />
+
+        <table border="1">
+            <caption>Table with Images</caption>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td><img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/24371433/236492_MacBook_Pro_16__2023__AKrales_0141.jpg" alt="Laptop" width="250px" height="200px"></td>
+            </tr>
+            <tr>
+                <td>Mobile Phone</td>
+                <td><img width="250px" height="200px" src="data:image/jpeg;base64,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" alt="Mobile Phone"></td>
+            </tr>
+        </table>
+        <hr />
+
+        <table border="1">
+            <caption>Table with Numbers</caption>
+            <tr>
+                <th>Number</th>
+                <th>Square</th>
+                <th>Cube</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>4</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>9</td>
+                <td>27</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption>Table with Dates and Events</caption>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>2023-01-15</td>
+                <td>Meeting with Team</td>
+            </tr>
+            <tr>
+                <td>2023-02-10</td>
+                <td>Project Deadline</td>
+            </tr>
+            <tr>
+                <td>2023-03-05</td>
+                <td>Client Presentation</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption>Table with User Data</caption>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption>Table with product information</caption>
+            <tr>
+                <th>Product ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Laptop</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Smartphone</td>
+                <td>$400</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption>Table with Country Information</caption>
+            <tr>
+                <th>Country</th>
+                <th>Capital</th>
+                <th>Population</th>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Washington, D.C.</td>
+                <td>328 million</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>Beijing</td>
+                <td>1.4 billion</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption><b><small>Merged Cells Example 1: Rowspan</small></b></caption>
+            <tr>
+                <th>Product ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="2">001</td>
+                <td>Laptop</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Smartphone</td>
+                <td>$400</td>
+            </tr>
+        </table>
+        <hr />
+        <table border="1">
+            <caption><b><small>Merged Cells Example 2: Colspan</small></b></caption>
+            <tr>
+                <th>Product</th>
+                <th colspan="2">Details</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Laptop</td>
+                <td>Brand</td>
+                <td>Dell</td>
+            </tr>
+            <tr>
+                <td>Processor</td>
+                <td>Intel Core i7</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td>Brand</td>
+                <td>Apple</td>
+            </tr>
+        </table>
+        
+        <hr />
+        <table border="1">
             <colgroup>
-                <col span="2" style="background-color: burlywood;">
-                <col span="2" style="background-color: cadetblue;">
+                <col style="background-color: #f2f2f2;">
+                <col style="background-color: #cce5ff;">
+                <col style="background-color: #ffcccb;">
             </colgroup>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th style="width: 66%;">Day</th>
-                    <th>Item name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="height: 50px;">
-                    <td>18/09/2023</td>
-                    <td>Monday</td>
-                    <td>Speakers</td>
-                    <th>$25</th>
-                </tr>
-                <tr>
-                    <!-- Row Cells Merging -->
-                    <td rowspan="2">19/09/2023</td>
-                    <td rowspan="2">Tuesday</td>
-                    <td>Mouse</td>
-                    <th>$35</th>
-                </tr>
-                <tr>
-                    <!-- <td>20/09/2023</td> -->
-                    <!-- <td>Wednesday</td> -->
-                    <td>Microphone</td>
-                    <th>$50</th>
-                </tr>
-                <tr>
-                    <td>21/09/2023</td>
-                    <td>Thursday</td>
-                    <td>Keyboard</td>
-                    <th>$110</th>
-                </tr>
-            </tbody>
-            <tfoot>
-                <!-- Column Cells Merging -->
-                <tr>
-                    <th colspan="2">Total Price</th>
-                    <th colspan="2">$220</th> 
-                </tr>
-            </tfoot>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Col 1</td>
+                <td>Row 1, Col 2</td>
+                <td>Row 1, Col 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Col 1</td>
+                <td>Row 2, Col 2</td>
+                <td>Row 2, Col 3</td>
+            </tr>
         </table>
     </body>
 </html>

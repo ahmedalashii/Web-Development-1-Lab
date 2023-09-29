@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Ahmed Alashi" />
+        <meta name="description" content="In this webpage, we are going to describe what the tables are!" />
+        <meta name="keywords" content="tables, html tables, thead, tbody, tfoot" />
+    </head>
+    <style>
+        /* table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+        thead th{
+            background-color: #888;
+        } */
+    </style>
+    <body>
+        <!-- Tables are used to display arranged data in the form of rows and columns -->
+        <!-- 
+            1. Tables in html are created using the <table> tag.
+            2. <table> tag consists of optional elements (<thead>, <tbody> and <tfoot>).
+            3. <thead>, <tbody> and <tfoot> contain <tr> (Table row).
+            4. <tr> contain <td> (Table data cell) or <th> (Table header cell).
+        -->
+        <h2>These are the sold items from 18-21 September of 2023 represented by table</h2>
+        <table border="1">
+            <caption>Daily Sales Schedule</caption>
+            <colgroup>
+                <col span="2" style="background-color: burlywood;">
+                <col span="2" style="background-color: cadetblue;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th style="width: 66%;">Day</th>
+                    <th>Item name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 50px;">
+                    <td>18/09/2023</td>
+                    <td>Monday</td>
+                    <td>Speakers</td>
+                    <th>$25</th>
+                </tr>
+                <tr>
+                    <!-- Row Cells Merging -->
+                    <td rowspan="2">19/09/2023</td>
+                    <td rowspan="2">Tuesday</td>
+                    <td>Mouse</td>
+                    <th>$35</th>
+                </tr>
+                <tr>
+                    <!-- <td>20/09/2023</td> -->
+                    <!-- <td>Wednesday</td> -->
+                    <td>Microphone</td>
+                    <th>$50</th>
+                </tr>
+                <tr>
+                    <td>21/09/2023</td>
+                    <td>Thursday</td>
+                    <td>Keyboard</td>
+                    <th>$110</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- Column Cells Merging -->
+                <tr>
+                    <th colspan="2">Total Price</th>
+                    <th colspan="2">$220</th> 
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
