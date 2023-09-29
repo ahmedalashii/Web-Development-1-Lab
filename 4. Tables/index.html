@@ -7,12 +7,18 @@
         <meta name="description" content="In this webpage, we are going to describe what the tables are!" />
         <meta name="keywords" content="tables, html tables, thead, tbody, tfoot" />
     </head>
-    <!-- <style>
-        table, th, td{
-            border: 1px solid black;
+    <style>
+        /* table{
+            width: 100%;
             border-collapse: collapse;
         }
-    </style> -->
+        th,td{
+            border: 1px solid black;
+        }
+        thead th{
+            background-color: #888;
+        } */
+    </style>
     <body>
         <!-- Tables are used to display arranged data in the form of rows and columns -->
         <!-- 
@@ -44,7 +50,7 @@
                     <th>$25</th>
                 </tr>
                 <tr>
-                    <!-- Cells Merging -->
+                    <!-- Row Cells Merging -->
                     <td rowspan="2">19/09/2023</td>
                     <td rowspan="2">Tuesday</td>
                     <td>Mouse</td>
@@ -64,6 +70,7 @@
                 </tr>
             </tbody>
             <tfoot>
+                <!-- Column Cells Merging -->
                 <tr>
                     <th colspan="2">Total Price</th>
                     <th colspan="2">$220</th> 

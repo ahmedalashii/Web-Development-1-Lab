@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>HTML Forms - HTTP METHOD</title>
+  </head>
+
+  <body>
+    <!-- action >> here is the action of the form that has to be done -->
+    <form action="" method="GET">
+      <!-- 
+            1. GET HTTP method appends the form data at the end of the URL on the form of name=value pairs (Query String).
+            2. GET HTTP method is not appropriate for sensitive information.
+      -->
+      <!-- 
+            3. POST HTTP method sends the data in the POST Body.
+            4. POST HTTP method is more secure than the GET HTTP method.
+      -->
+      <!--
+        5. hidden >> the data of the hidden field will be sent to the server 
+        6. readonly >> the data of the readonly field will be sent to the server 
+        7. disabled >> the data of the disabled field will not be sent to the server
+      -->
+      <h2>Contact Us Form</h2>
+      <!-- 1- Username -->
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" value="ahmed_alashi" required disabled /> <br />
+      <br />
+
+      <!-- 2- Email -->
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /> <br />
+      <br />
+
+      <!-- 3- Subject -->
+      <label for="subject">Subject:</label>
+      <input type="text" name="subject" id="subject" required /> <br />
+      <br />
+
+      <!-- 4- Message -->
+      <label for="message">Message:</label> <br />
+      <textarea name="message" id="message" cols="20" rows="10"></textarea>
+      <br />
+      <br />
+
+      <!-- Submission/Sending data to the backend button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

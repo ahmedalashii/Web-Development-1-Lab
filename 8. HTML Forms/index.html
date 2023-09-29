@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form and all possible input fields</title>
+        <meta name="author" content="Ahmed Alashi" />
+        <meta name="description" content="In This webpage, we are going to explore the HTML Forms and its possible input fields" />
+        <meta name="keywords" content="html forms, input, action, method, get, post, type, required, value, autofocus" />
+    </head>
+    <body>
+        <!-- 
+            1. HTML Forms are used for collecting/gathering information. >> data collection
+            2. HTML Forms are represented using the <form> tag in html.
+            3. <form> tag has default attrbiute called "action", which is the place where the data will be processed.
+            4. <form> tag has also another important attrbiute called "method" >> HTTP Verb / Method (GET, POST, PUT, PATCH, DELETE, OPTIONS)
+            5. <form> tag is the container of our form input fields.
+            6. The data that is sent to the server, is sent on the form of name/value pairs.
+        -->
+        <form action="" method="GET">
+            <h2>HTML Form Possible Input elements</h2>
+            <!-- 1- Text input -->
+            <label for="text_input">Text Input:</label>
+            <!-- <input type="text" id="text_input" value="old value" placeholder="Enter your username" required /> <br/> <br/> -->
+            <input type="text" id="text_input" placeholder="Enter your username" required /> <br/> <br/>
+
+            <!-- 2- Password input -->
+            <label for="password_input">Password Input:</label>
+            <input type="password" id="password_input" required /> <br/> <br/>
+            
+            <!-- 3- Email input -->
+            <label for="email_input">Email Input:</label>
+            <!-- <input type="email" id="email_input" value="oldemail@example.com" required /> <br/> <br/> -->
+            <input type="email" id="email_input" required /> <br/> <br/>
+
+            <!-- 4- Number input -->
+            <label for="number_input">Number Input:</label>
+            <input type="number" id="number_input" min="0" max="5" required /> <br/> <br/>
+
+            <!-- 5- Date input -->
+            <label for="date_input">Date Input:</label>
+            <input type="date" id="date_input" required /> <br/> <br/>
+
+            <!-- 6- Checkbox Input (Multiselection) -->
+            <label for="checkbox_input">Checkbox Input:</label>
+            <input type="checkbox" id="checkbox_input" required /> <br/> <br/>
+
+            <!-- 7- Radio Input (Single Selection) -->
+            <label for="radio_input">Radio Input:</label>
+            <input type="radio" id="radio_input" required /> <br/> <br/>
+
+            <!-- 8- File Input (Upload a file) -->
+            <label for="file_input">File Input:</label>
+            <input type="file" id="file_input" required /> <br/> <br/>
+
+            <!-- 9- Color Input (Hexadecimal color) -->
+            <label for="color_input">Color Input:</label>
+            <input type="color" id="color_input" required /> <br/> <br/>
+
+            <!-- 10- Range Input -->
+            <label for="range_input">Range Input:</label>
+            <label>0</label>
+            <input type="range" id="range_input" min="0" max="100" required/> 
+            <label>100</label><br/> <br/>
+
+            <!-- 111- Search Input -->
+            <label for="search_input">Search Input:</label>
+            <input type="search" id="search_input" required /> <br/> <br/>
+
+            <!-- 12- Telephone Number Input -->
+            <label for="phone_input">Phone Number Input:</label>
+            <input type="tel" id="phone_input" placeholder="Enter your phone number" required /> <br/> <br/>
+
+            <!-- 13- URL Input -->
+            <label for="url_input">URL Input:</label>
+            <input type="url" id="url_input" placeholder="Enter a link" required autofocus /> <br/> <br/>
+
+            <!-- 14- Datetime Input -->
+            <label for="datetime_input">Date Time Input:</label>
+            <input type="datetime-local" id="datetime_input" required /> <br/> <br/>
+
+            <!-- 15- Time Input -->
+            <label for="time_input">Time Input:</label>
+            <input type="time" id="time_input" required /> <br/> <br/>
+
+            <!-- 16- Month Input -->
+            <label for="month_input">Month Input:</label>
+            <input type="month" id="month_input" required /> <br/> <br/>
+
+            <!-- 17- Week Input -->
+            <label for="week_input">Week Input:</label>
+            <input type="week" id="week_input" required /> <br/> <br/>
+            
+            
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <option value="-1" selected>Select a car</option>
+                <optgroup label="High price Cars">
+                    <option value="audi">Audi</option>
+                    <option value="mercedes">Mercedes</option>
+                </optgroup>
+                <optgroup label="Low price cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="skoda">Skoda</option>
+                </optgroup>
+            </select> <br/> <br/>
+            
+            <!-- 18- Submit button input + 19- Reset Inputs (Reset the input fields to the old values) -->
+            <input type="submit" value="Send" />
+            <input type="reset" value="Clear" /> <br/> <br/>
+        </form>
+    </body>
+</html>
