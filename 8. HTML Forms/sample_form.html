@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms - Continued</title>
+        <style>
+            input{
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="POST" target="_blank">
+            <!-- Fieldset >> is used for grouping related input fields -->
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="full_name">Full Name:</label>
+                <input type="text" name="full_name" id="full_name" required /> <br/>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required /> <br />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required /> <br/>
+            </fieldset>
+            <fieldset>
+                <legend>User Info</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" requried /> <br/>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" requried /> <br/>
+
+                <label>Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" requried value="male" />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" requried value="female"/> <br/>
+
+                <label>Languages:</label>
+                <input type="checkbox" id="english" name="languages" value="english" />
+                <label for="english">English</label>
+
+                <input type="checkbox" id="french" name="languages" value="french" />
+                <label for="french">French</label>
+
+                <input type="checkbox" id="arabic" name="languages" value="arabic" />
+                <label for="arabic">Arabic</label>  <br/>
+
+                <label>Interests:</label>
+                <input type="text" list="interests" multiple />
+                <datalist id="interests">
+                    <option value="Swimming">
+                    <option value="Playing Football">
+                    <option value="Playing Volyeball">
+                    <option value="Playing Basketball">
+                </datalist> <br/>
+
+                <label for="roles">Roles (Multi-selection)</label>
+                <select name="roles[]" id="roles" multiple>
+                    <option value="software_developer">Software Developer</option>
+                    <option value="front_end_developer">Frontend Developer</option>
+                    <option value="back_end_developer">Backend Developer</option>
+                    <option value="flutter_developer">Flutter Developer</option>
+                </select>
+            </fieldset>
+            <br/>
+            <!-- Submission/Sending data to the server input -->
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
