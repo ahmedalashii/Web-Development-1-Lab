@@ -1,0 +1,33 @@
+/* This is a single line comment in css */
+/* 
+    This is a multi-line comment in css
+
+    CSS stands for Cascading Style Sheets.
+    CSS is a language that describes the style of an HTML document.
+    CSS describes how HTML elements should be displayed.
+
+    Q: How CSS works?
+    CSS works by associating rules with HTML elements. 
+    These rules govern how the content of specified elements should be displayed. 
+    A CSS rule contains two parts: a selector and a declaration.
+
+    CSS Syntax:
+    A CSS rule consists of a selector and a declaration block:
+    selector {
+        property: value;
+        property: value;
+        ...
+    }
+
+    CSS Selectors:
+    CSS selectors are used to "find" (or select) the HTML elements you want to style.
+    >> We can divide CSS selectors into five categories:
+    1. Simple selectors (select elements based on name, id, class), e.g., (p, #id, .class)
+    2. Combinator selectors (select elements based on a specific relationship between them), e.g., (p > ul)
+    3. Pseudo-class selectors (select elements based on a certain state), e.g., (p:hover)
+    4. Pseudo-elements selectors (select and style a part of an element), e.g., (p::first-line || p::first-letter)
+    5. Attribute selectors (select elements based on an attribute or attribute value), e.g., (a[target="_blank"] || input[type="text"] || input[type="text"][required])
+*/
+p {
+    color: green;
+}
