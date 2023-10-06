@@ -9,7 +9,7 @@
         </style>
     </head>
     <body>
-        <form action="" method="POST" target="_blank">
+        <form action="" method="POST" target="_blank" novalidate>
             <!-- Fieldset >> is used for grouping related input fields -->
             <fieldset>
                 <legend>Contact Information</legend>
@@ -48,7 +48,7 @@
                 <label for="arabic">Arabic</label>  <br/>
 
                 <label>Interests:</label>
-                <input type="text" list="interests" multiple />
+                <input type="text" list="interests" />
                 <datalist id="interests">
                     <option value="Swimming">
                     <option value="Playing Football">
@@ -66,7 +66,8 @@
             </fieldset>
             <br/>
             <!-- Submission/Sending data to the server input -->
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit Input" />
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
